@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- declarar html5 -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"><!-- padrão de unicode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- para conpatibilidade com edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- compatibilidade de telas -->
+    <title>Curriculo</title><!-- titulo da aba -->
+    <link rel="stylesheet" href="./styles/style.css"><!-- declaração de css -->
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="meus_projetos.html">Meus Projetos</a>
+            <a class="cabecalho__menu__link" href="Curriculo.html">Curriculo</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+
+
+    </header>
+    <main class="conteiner">
+        <section class="conteiner__conteudo">
+            <h1 class="conteiner__conteudo__titulo">Currículo</h1>
+            <p class="conteiner__conteudo__texto">
+                Apresentação e informações principais
+            </p>
+            <h2 class="conteiner__conteudo__titulo">Experiências</h2>
+            <p class="conteiner__conteudo__texto">
+            <ul class="conteiner__conteudo__texto">
+                <li> Empresa tal (2020 - 2021) - fazia isso e aquilo </li>
+                <li> Empresa tal (2021 - 2023) - fazia isso e aquilo </li>
+            </ul>
+            </p>
+            <h2 class="conteiner__conteudo__titulo">Estudos</h2>
+            <div class="conteiner__conteudo__texto">
+            <ul class="conteiner__conteudo__texto">
+                <li>Curso tal - Alura Cursos <a href="linkdocertificado">com certificado</a> </li>
+                <li>Curso tal - Alura Cursos <a href="linkdocertificado">com certificado</a></li>
+                <li>Curso tal - Alura Cursos <a href="linkdocertificado">com certificado</a></li>
+            </ul>
+            </div>    
+        </section>
+        <img src="./assets/imagem.png" alt="Foto da Joana Santos programando">
+    </main> 
+COPIAR CÓDIGO
+E a única adição no CSS foi a estilização dos links de certificado, como no seguinte bloco de código:
+
+
+.conteiner__conteudo__texto a{
+    text-decoration: none;
+    color: #22D4FD;
+}
+
+    <footer>
+        <p class="rodape">
+            Desenvolvido por Guilherme Sousa
+        </p>
+    </footer>
+</body>
+
+</html>

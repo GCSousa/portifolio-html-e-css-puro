@@ -1,0 +1,156 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* essa linha serve para zerar todas tags usadas abaixo, afim de ter melhor controle dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* :root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --tamanho-da-fonte:  24px;
+
+} */
+
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --tamanho-da-fonte:  24px;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 12%;
+}
+
+.cabecalho__menu
+{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link
+{
+    font-family: var(--font-secundaria);
+    font-size: var(--tamanho-da-fonte);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+
+.empty{
+    height: 100vh;
+    /* isso quer dizer que estamos usando 100% da tela disponivel */
+    box-sizing: border-box;
+    /* esta linha serve para que os elementos não ultrapasssem a borda*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.conteiner {
+    padding: 8% 8%;
+    margin: 0% 4%;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; inseri essa linha só para deixar claro o direcionamento da flexbox*/
+}
+
+.conteiner__conteudo {
+    
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* largura altura*/
+    /*height: ;  altura*/
+}
+
+.conteiner__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.conteiner__conteudo__titulo__tituloDestaque {
+    color: var(--cor-terciaria);
+}
+
+.conteiner__conteudo__texto {
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-da-fonte);
+}
+
+.conteiner__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.conteiner__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: var(--tamanho-da-fonte);
+}
+
+.conteiner__links__layout {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: var(--tamanho-da-fonte);
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria)
+}
+
+.conteiner__links__layout:hover {
+        background-color: var(--cor-hover);
+        padding-right: 3%;
+        padding-left: 3%;
+
+}
+
+.imagem{
+    border: 2px solid var(--cor-terciaria);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: var(--tamanho-da-fonte);
+    font-weight: 400;
+}
