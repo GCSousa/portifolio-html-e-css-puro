@@ -54,6 +54,28 @@ body {
     color: var(--cor-secundaria);
 }
 
+.projeto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;    
+    gap: 40px;
+
+}
+
+.projeto__jogo{
+    
+    min-width: 604px;
+    max-width: 604px;
+    min-height: 446px;
+    max-height: 446px;
+    /* box-sizing: border-box;
+    align-items: center;
+    justify-content: center; */
+}
+
 .conteiner {
     /* padding: 8% 8%;
     margin: 0% 4%;
