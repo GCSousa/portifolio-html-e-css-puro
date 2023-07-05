@@ -1,25 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
-/* essa linha serve para zerar todas tags usadas abaixo, afim de ter melhor controle dos elementos */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* :root {
-    --cor-primaria: #2C3639;
-    --cor-secundaria: #DCD7C9;
-    --cor-terciaria: #A27B5C;
-    --cor-hover: #3F4E4F;
-
-    --fonte-primaria: 'Krona One', sans-serif;
-    --font-secundaria: 'Montserrat', sans-serif;
-    --tamanho-da-fonte:  24px;
-
-} */
-
 
 :root{
     --cor-primaria: #000000;
@@ -29,30 +8,32 @@
 
     --fonte-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
-    --tamanho-da-fonte:  24px;
+    --tamanho-da-fonte-primaria:  2.25rem;; /*24px */
+    --tamanho-da-fonte-secundaria:  1.5rem; /*24px */
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 12%;
+    /* padding: 2% 0% 0% 12%; */
+    padding: 2% 0% 0% 15%;
 }
-
 .cabecalho__menu
 {
     display: flex;
     gap: 80px;
 }
-
 .cabecalho__menu__link
 {
     font-family: var(--font-secundaria);
-    font-size: var(--tamanho-da-fonte);
+    font-size: var(--tamanho-da-fonte-secundaria);
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 
 }
-
-
 
 body {
     box-sizing: border-box;
@@ -61,37 +42,39 @@ body {
 
 }
 
+.linkcertificado{
+    text-decoration: none;
+    color: #22D4FD;
+}
+
 .empty{
     height: 100vh;
-    /* isso quer dizer que estamos usando 100% da tela disponivel */
     box-sizing: border-box;
-    /* esta linha serve para que os elementos não ultrapasssem a borda*/
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
 
 .conteiner {
-    padding: 8% 8%;
+    /* padding: 8% 8%;
     margin: 0% 4%;
-    gap: 5%;
+    gap: 5%; */
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* flex-direction: row; inseri essa linha só para deixar claro o direcionamento da flexbox*/
+    gap: 82px;
 }
 
 .conteiner__conteudo {
-    
-    width: 615px;
+    /* width: 615px; */
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* largura altura*/
-    /*height: ;  altura*/
 }
 
 .conteiner__conteudo__titulo {
-    font-size: 36px;
+    font-size: var(--tamanho-da-fonte-primaria);
     font-family: var(--fonte-primaria);
 }
 
@@ -101,7 +84,7 @@ body {
 
 .conteiner__conteudo__texto {
     font-family: var(--fonte-primaria);
-    font-size: var(--tamanho-da-fonte);
+    font-size: var(--tamanho-da-fonte-secundaria);
 }
 
 .conteiner__links {
@@ -115,7 +98,7 @@ body {
 .conteiner__links__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: var(--tamanho-da-fonte);
+    font-size: var(--tamanho-da-fonte-secundaria);
 }
 
 .conteiner__links__layout {
@@ -126,7 +109,7 @@ body {
     width: 378px;
     text-align: center;
     border-radius: 8px;
-    font-size: var(--tamanho-da-fonte);
+    font-size: var(--tamanho-da-fonte-secundaria);
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -142,7 +125,8 @@ body {
 }
 
 .imagem{
-    border: 2px solid var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria); 
+    width: 50%;
 }
 
 .rodape {
@@ -151,6 +135,22 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--font-secundaria);
-    font-size: var(--tamanho-da-fonte);
+    font-size: var(--tamanho-da-fonte-secundaria);
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .conteiner{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteiner__conteudo{
+        width: auto;
+    }
 }
